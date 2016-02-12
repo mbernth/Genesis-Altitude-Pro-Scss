@@ -1,0 +1,92 @@
+/*
+MIXINS
+---------------------------------------------------------------------------------------------------- */
+
+/* Colours
+--------------------------------------------- */
+
+/* White */
+$color-white: #fafafa; 
+
+/* Black */
+$color-black: #000023; /* Black */
+$color-black_rgb: rgb(0, 0, 35) ; /* Black */
+
+/* Primary One (Blue) */
+$color-primary-one: #00427e; /* 100% Blue */
+$color-primary-one_rgb: rgb(0, 66, 126) ; /* Blue */
+
+/* Secondary One (Red) */
+$color-secondary-one: #d71a44; /* 100% Red */
+$color-secondary-one_rgb: rgb(215, 26, 68) ; /* Red */
+
+/* Secondary Two (Green) */
+$color-secondary-two: #79ad36; /* 100% Green */
+$color-secondary-two_rgb: rgb(121, 173, 54) ; /* Green */
+
+/* Typography
+--------------------------------------------- */
+
+/* Primary Font Faminly */
+$font-sans: "museo-sans", sans-serif;
+$font-headlines: "museo-sans", sans-serif;
+
+/* Basic Font Sizes mixin */
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@mixin line-height($lineheight: 1.6) {
+  line-height:($lineheight * 10) + px;
+  line-height:$lineheight + rem;
+}
+
+@mixin font($fontsize: 1.6, $lineheight: 1.6) {
+  font-size: ($fontsize * 10) + px;
+  font-size: $fontsize + rem;
+  line-height:($lineheight * 10) + px;
+  line-height:$lineheight + rem;
+}
+
+p.standard {
+	@include font(1.6, 2.4);
+}
+
+/* Buttons
+--------------------------------------------- */
+
+@mixin corners($radius){
+	-webkit-border-radius: $radius;
+	   -moz-border-radius: $radius;
+			border-radius: $radius;
+}
+
+
+/* Grid
+--------------------------------------------- */
+
+/* Grid mixin */
+@mixin grid($colls, $margin, $target) {
+  width: ((($target - (($colls - 1) * $margin)) / $colls) / $target) * 100%;
+  &:nth-child(n) {
+    margin-right: (($margin / $target) * 100%);
+  }
+  &:nth-child(#{$colls}n) {
+    margin-right: 0;
+  }
+}
+
+@mixin grid_alt($colls, $margin, $target) {
+  width: ((($target - (($colls - 1) * $margin)) / $colls) / $target) * 100%;
+  &:nth-child(n) {
+    margin-right: (($margin / $target) * 100%);
+  }
+  &:nth-child(#{($colls + 1)}n) {
+    margin-right: 0;
+  }
+}
+
+@mixin structure($width, $target) {
+	width: ($width / $target * 100%);
+}

@@ -1,0 +1,126 @@
+/*
+Media Queries
+---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1023px) {
+
+	.site-inner,
+	.wrap {
+		max-width: 768px;
+	}
+	
+	.secondary-nav .site-inner {
+		margin-top: 80px;
+	}
+
+	.front-page .site-inner {
+		max-width: none;
+	}
+
+	.site-header {
+		position: static;
+	}
+	
+	.front-page .site-header {
+		background-color: #000;
+	}
+	
+	.front-page .site-header > .wrap {
+		border: none;
+	}
+
+	.content,
+	.sidebar,
+	.site-header .widget-area,
+	.title-area {
+		width: 100%;
+	}
+	
+	.site-header .title-area,
+	.site-header.dark .title-area {
+		padding: 15px 0;
+	}
+	
+	.header-image .dark .site-title > a {
+		height: 76px;
+	}
+
+	.genesis-nav-menu,
+	.site-header .widget-area,
+	.site-title {
+		text-align: center;
+	}
+	
+	.header-image .site-title > a {
+		background-position: center !important;
+	}
+	
+	.nav-primary .genesis-nav-menu {
+		float: none;
+	}
+	
+	.nav-secondary,
+	.site-header.dark .nav-secondary {
+		border-bottom: none;
+		display: block;
+	}
+
+	.genesis-nav-menu a,
+	.site-header.dark .genesis-nav-menu a {
+		padding: 10px;
+	}
+
+	.front-page .site-inner {
+		margin-top: 0;
+	}
+
+	.site-inner {
+		margin-top: 80px;
+	}
+
+	.full-width-content .content {
+		padding: 0;
+	}
+
+	.full-width-content img.pull-left {
+		margin-left: 0;
+	}
+
+	.full-width-content img.pull-right {
+		margin-right: 0;
+	}
+
+	.five-sixths,
+	.four-sixths,
+	.one-fourth,
+	.one-half,
+	.one-sixth,
+	.one-third,
+	.three-fourths,
+	.three-sixths,
+	.two-fourths,
+	.two-sixths,
+	.two-thirds {
+		margin: 0;
+		width: 100%;
+	}
+	
+	.flexible-widgets.widget-full .widget,
+	.flexible-widgets.widget-halves .widget,
+	.flexible-widgets.widget-thirds .widget,
+	.flexible-widgets.widget-fourths .widget {
+		margin: 0 auto 20px;
+		width: 100%;
+	}
+	
+	.image-section h2,
+	.solid-section h2 {
+		font-size: 60px;
+	}
+	
+	.front-page-1 .image-section,
+	.secondary-nav .front-page-1 .image-section {
+		padding-top: 0;
+	}
+
+}

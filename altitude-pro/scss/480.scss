@@ -1,0 +1,12 @@
+/*
+Media Queries
+---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 480px) {
+
+	.image-section h2,
+	.solid-section h2 {
+		font-size: 40px;
+	}
+
+}

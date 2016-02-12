@@ -1,0 +1,39 @@
+/*
+Media Queries
+---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1200px) {
+
+	.site-inner,
+	.wrap {
+		max-width: 960px;
+	}
+
+	.site-header .widget-area {
+		width: 580px;
+	}
+
+	.content {
+		width: 520px;
+	}
+
+	.full-width-content .content {
+		padding: 0 110px;
+	}
+	
+	.genesis-nav-menu a {
+		padding: 30px 10px;
+	}
+	
+	.site-header.dark .genesis-nav-menu a {
+		padding: 20px 10px;
+	}
+	
+	.front-page-1,
+	.front-page-3,
+	.front-page-5,
+	.front-page-7 {
+	    background-attachment: scroll;
+	}
+
+}
